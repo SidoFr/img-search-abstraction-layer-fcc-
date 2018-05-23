@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+<html lang="en">
+    <head>
+        <title>abstraction layer</title>
+        <!--<link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            margin: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1DA1F2;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>IMAGE SEARCH ABSTRACTION LAYER</h1>
+        <P>"Generally, an abstraction layer is an API (set of functions) which is hiding the 
+            underlying implementation/complexity. The purpose is to provide a clear and 
+            easier-to-use interface over an existing set of functionality."
+            <em>(stackexchange user)</em>
+        </P>
+        <p>This is the 4th fcc API backend project.</p>
+        <ul>
+            <p>User story:</p>
+            <li> I can get the image URLs, alt text and page urls for a set of images 
+                relating to a given search string</li>
+            <li> I can paginate through the responses by adding a ?offset=2 parameter 
+                to the URL.</li>
+            <li>I can get a list of the most recently submitted search strings.</li>
+        </ul>
+        <p><strong>Try me!</strong></p>
+        <p><a href="http://localhost:3000/api/search/panda">http://localhost:3000/api/search/panda</a></p>
+        <p><a href="http://localhost:3000/api/search/dragonfly">http://localhost:3000/api/search/dragonfly</a></p>
+        <br>
+        <p>with offset:</p>
+        <p><a href="http://localhost:3000/api/search/panda?offset=6">http://localhost:3000/api/search/panda?offset=6</a></p>
+        <p><a href="http://localhost:3000/api/search/dragonfly?offset=10">http://localhost:3000/api/search/dragonfly?offset=10</a></p>
+        <p>You can change the name of these request and change or remove offset with the ones of your choice.</p>
+        <br>
+        <p>get latest search:</p>
+        <p><a href="http://localhost:3000/api/latest">http://localhost:3000/api/latest</a></p>
+    </body>
+</html>
